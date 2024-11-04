@@ -29,7 +29,7 @@ const SignUp = () => {
             });
             if(response.status === 200){
                 reset();
-                navigate("/login");
+                navigate("/");
             }
         } catch (error) {
             const err = error as AxiosError<ErrorResponse>
@@ -102,7 +102,7 @@ const SignUp = () => {
                     Sign Up
                 </Button>
             </form>
-            <h3>Already have account? <Link to = "/login" className="text-blue-400">Login</Link></h3>
+            <h3>Already have account? <Link to = "/" className="text-blue-400">Login</Link></h3>
         </>
     );
 };

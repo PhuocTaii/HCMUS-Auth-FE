@@ -14,11 +14,11 @@ function App() {
     <Router>
       <Routes>
         <Route element={<AuthLayout/>}>
-          <Route path = "/login" element = {<Login></Login>}></Route>
+          <Route path = "/" element = {<Login></Login>}></Route>
           <Route path = "/signup" element = {<SignUp></SignUp>}></Route>
         </Route>
         <Route element={<MainLayout/>}>
-          <Route path="/" element = {<Home></Home>}></Route>
+          <Route path="/home" element = {<Home></Home>}></Route>
         </Route>
       </Routes>
     </Router>

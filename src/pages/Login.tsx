@@ -28,7 +28,7 @@ const Login = () => {
                 password: data.password
             });
             reset();
-            navigate("/", {state: {user: response.data}});
+            navigate("/home", {state: {user: response.data}});
   
         } catch (error) {
             const err = error as AxiosError<ErrorResponse>
