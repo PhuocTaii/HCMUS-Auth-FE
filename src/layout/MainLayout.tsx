@@ -5,7 +5,7 @@ const MainLayout = () => {
     return (
         <>
             <div className="flex pt-5 justify-end">
-                <Link to='/login'>
+                <Link to='/'>
                     <Button variant="outlined" className="">
                         Logout
                     </Button>
